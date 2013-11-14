@@ -1,0 +1,110 @@
+    <div class="container checkout-container">            
+        <div class="row">            
+            <div class="col-md-12"> 
+            <a href="/"><img src="/images/threeleaf-header.png" class="header-img img-responsive" alt="Three Leaf Tea Header"></a>
+                <hr>
+                <form novalidate autocomplete="on" id="payment-form" class="form">                                                            
+                    <div class="row">
+                        <div class="checkout-section">
+
+                            <div class="col-md-12">
+                                <h1>Monthly Tea Subscription</h1>
+                            </div>       
+
+                            
+                            <div class="col-md-12">                                
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="0" checked>     
+                                        Tea refills with brewing set ($29/month + $40)                        
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="1">
+                                        Tea refills only ($29/month)
+                                    </label>
+                                </div>       
+                                <div class="bill">Billed Today: <span class="price">$69.00</span></div>
+                            </div>
+                        </div> <!-- checkout-section -->                                                
+                    </div> <!-- row -->
+                                     
+                     <hr>
+
+                    <div class="row">
+                        <div class="checkout-section">
+
+                            <div class="col-md-12">
+                                <h2>Shipping Address</h2>
+                            </div>                            
+
+                            <div class="form-group col-md-12">                                                                              
+                                <input type="text" class="form-control" name="name" placeholder="Name">                            
+                            </div> <!-- form-group -->
+
+                            <div class="form-group col-md-12">
+                                <input type="address" class="form-control" name="address" placeholder="Street Address">                       
+                            </div> <!-- form-group -->
+
+                            <div class="form-group col-xs-4">
+                                <input type="text" class="form-control" name="city" placeholder="City">
+                            </div> <!-- form-group -->                    
+
+                            <div class="form-group  col-xs-4">
+                                <input type="text" class="form-control" name="state" placeholder="State">
+                            </div>
+
+                            <div class="form-group  col-xs-4">
+                                <input type="text" class="form-control" name="zip" placeholder="Zip" pattern="\d*">                      
+                            </div>
+                            
+                        </div> <!-- checkout-section -->    
+                    </div> <!-- row -->                                             
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="checkout-section">
+
+                            <div class="col-md-12">
+                                <h2>Billing Details</h2>
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <label for="email">Email</label>                            
+                                <input type="text" class="form-control" id="email" name="email">
+                            </div> <!-- form-group -->
+
+                            <div class="form-group col-md-12">                            
+                                <label for="number">Card Number</label>                            
+                                <input type="text" class="form-control" size="20" id="number" data-stripe="number" placeholder="&#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679;" pattern="\d*">
+                            </div> <!-- form-group -->
+
+                            <div class="form-group col-md-6">
+                                <label for="expiration" class="control-label">Expires</label>                            
+                                <input type="text" class="form-control" id="expiration" placeholder="MM / YY" pattern="\d*">
+                            </div>                            
+
+                            <div class="form-group col-md-6">
+                                <label for="cvc" class="control-label">CVC</label>                            
+                                <input type="text" class="form-control" size="4" id="cvc" data-stripe="cvc" placeholder="CVC" pattern="\d*">                                
+                            </div> <!-- form-group -->
+                                                    
+                            
+                            
+                        </div> <!-- checkout-section -->    
+                    </div> <!-- row -->    
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Subscribe Now</button>    
+                             <!-- <button type="submit">Submit Payment</button> -->
+                        </div>
+                    </div>  
+
+                                        
+                </form> <!-- form -->
+            </div> <!-- <div class="col-md-6 col-md-offset-3"> -->
+        </div> <!-- row -->
+    </div> <!-- contaner -->       
