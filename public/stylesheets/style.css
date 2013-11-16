@@ -1,3 +1,6 @@
+.navbar .nav li a:hover {
+  color: #00ee00;
+}
 .main-content {
   margin-top: 15%;
   height: 540px;
