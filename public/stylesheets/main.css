@@ -14,7 +14,7 @@
 /* OVERALL ASPECT */
 
 body {
-  background-color: #f2f2f2;
+  background-color: #FFFFF;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
@@ -90,8 +90,8 @@ a:after {
 }
 
 .navbar-inverse {
-    background: #2d2d2d;
-    border-color: #2d2d2d;
+    background: #FFFFF;
+    border-color: #FFFFF;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
@@ -99,7 +99,7 @@ a:after {
 }
 
 .navbar-inverse .navbar-brand {
-    color: #999999;
+    color: #FFFFF;
     font-weight: bolder;
     font-size: 22px;
     letter-spacing: 1px;
@@ -133,7 +133,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-    background: url(http://farm3.staticflickr.com/2787/4432370157_11330a94dd_b.jpg) no-repeat center top;
+    background: url(#) no-repeat center top;
     margin-top: -10px;
     padding-top:20px;
     text-align:center;
@@ -169,9 +169,9 @@ a:after {
     text-transform: uppercase;
 }
 
-/* Dark Grey Wrap */
+/* White Header Wrap */
 #dg {
-    background: #e0e0e0;
+    background: #FFFFF;
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
@@ -231,7 +231,7 @@ a:after {
 
 /* Footer Wrap */
 #f {
-    background: #2d2d2d;
+    background: #FFFFFF;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -292,7 +292,7 @@ a:after {
 }
 
 .modal-header {
-    background: #bdbdbd;
+    background: #f2f2f2;
     color: white;
 }
 
@@ -301,7 +301,7 @@ a:after {
 }
 
 .modal-body {
-    background: #f2f2f2;
+    background: #ffff;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
@@ -313,6 +313,82 @@ a:after {
     margin-top: 0px; 
 }
 
+/****** BUTTONS *****/
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #00cc00;
+  border-color: #00cc00;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn-info {
+  color: #ffffff;
+  background-color: #00cc00;
+  border-color: #00cc00;
+}
+
+
 /* ==========================================================================
    Pricing Tables
    ========================================================================== */
@@ -323,8 +399,8 @@ a:after {
 
 .pricing-option .pricing-top {
     position: relative;
-    background: #222;
-    color: white;
+    background: #f2f2f2;
+    color: black;
     text-align: center;
     font-weight: bold;
 
@@ -408,5 +484,3 @@ a:after {
 .pricing-option .pricing-signup:hover {
     background: #00cc00;
 }
-
-
