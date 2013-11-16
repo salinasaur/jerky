@@ -1,20 +1,30 @@
 <%= include /layouts/header.ejs %>
 
-	<div id="headerwrap">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-8 col-lg-offset-2">
-				<h1>Jerky All Day <strong>Errday!</strong></h1>
-				<h2>(Shipped to Your Door, Monthly)</h2>
-				</div>
-			</div><!-- row -->
-		</div><!-- container -->
-	</div><!-- headerwrap -->
+	<div class="container main-content">
+      <div class="row">
+        <div class="col-lg-8">
+          <img class="img-responsive img-rounded" src="http://placehold.it/900x350"><!-- take out img-rounded if you don't want the rounded corners on the image -->
+        </div>
+        <div class="col-lg-4">
+	        <div class="row centered">
+	       	  <p><a href="http://www.sumojerky.com/"><img src="#" alt=""></a></p>
+	          <h1>Sumo Jerky</h1>
+	          <h4>Get delicious jerky, delivered monthly.</h4>
+	          <a class="btn btn-primary btn-lg" href="/checkout">Get Started</a>
+	        </div>
+        </div>
+      </div>
 
+	</div><!-- container -->
+	
+	<div class="learn-more">
+		<p>Learn More &nbsp<i class="fa fa-arrow-down"></i></p>
+
+	</div>
+	<hr>
 
 	<div class="container w">
 		<div class="row centered">
-			<br><br>
 			<div class="col-lg-4">
 				<i class="fa fa-calendar"></i>
 				<h4>MONTHLY</h4>
@@ -22,7 +32,7 @@
 			</div><!-- col-lg-4 -->
 
 			<div class="col-lg-4">
-				<i class="fa fa-shopping-cart"></i>
+				<a href="/checkout"><img src="/images/icon_cow.png" alt=""></a>				
 				<h4>JERKY</h4>
 				<p>From the best artisan and local jerky makers and butchers we can find. Sumo Jerky approved. </p>
 			</div><!-- col-lg-4 -->
@@ -30,10 +40,9 @@
 			<div class="col-lg-4">
 				<i class="fa fa-home"></i>
 				<h4>DELIVERY</h4>
-				<p>Ready to try? <strong>It's only $25/month.</strong> <br>Join today to get in on the next batch.</p>
+				<p>Ready to try? <strong><a href="/checkout">It's only $25/month.</a></strong> <br>Join today to get in on the next batch.</p>
 			</div><!-- col-lg-4 -->
 		</div><!-- row -->
-		<br>
 		<br>
 	</div><!-- container -->
 
@@ -46,19 +55,19 @@
 				<br>
 				<div class="col-lg-4">
 					<div class="tilt">
-					<img src="/images/sumo_polaroid1.png" alt="travel_for_jerky">
+					<a href="/"><img src="/images/sumo_polaroid1.png" alt=""></a>
 					</div>
 				</div>
 
 				<div class="col-lg-4">
 					<div class="tilt">
-					<img src="/images/sumo_polaroid2.png" alt="hq_jerky">
+					<a href="/"><img src="/images/sumo_polaroid2.png" alt=""></a>
 					</div>
 				</div>
 
 				<div class="col-lg-4">
 					<div class="tilt">
-					<img src="/images/sumo_polaroid3.png" alt="share_jerky">
+					<a href="/"><img src="/images/sumo_polaroid3.png" alt=""></a>
 					</div>
 				</div>
 			</div><!-- row -->
@@ -69,7 +78,7 @@
 
 <div class="container w">
 		<div class="row centered">
-			<br><br>
+			<br>
 			<h4>OUR AWESOME CLIENTS</h4>
 			<div class="col-lg-4">
 				<p><em>"I love me some jerky! I guess I know where my son gets his obsession with delicious dried meat from... luckily we have Sumo Jerky to satiate our jerky cravings! Now if only there were daily deliveries..."</em></p>
@@ -89,18 +98,6 @@
 		<br>
 		<br>
 	</div><!-- container -->
-
-
-	<div id="r">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h4>WE KNOW AND LOVE JERKY.</h4>
-					<p>Our CEO, Ryan, is a jerky freak and knows about tons of different types of jerky. His wife even complains that their kitchen is filled with jerky (sorry, not sorry)! He created Keto Jerky (now Sumo Jerky) to share his passion with jerky fanatics around the world. We love connecting with Sumo Jerky fans, so make sure to hit us up on Facebook, Twitter and Instagram! #sumojerky</p>
-				</div>
-			</div><!-- row -->
-		</div><!-- container -->
-	</div><! -- r wrap -->
 	
 	
 <%= include /layouts/footer.ejs %>
