@@ -33,6 +33,7 @@ p {
 
 /* Links */
 a {
+    /*color: #59F459;*/
     color: #00cc00;
     word-wrap: break-word;
 
@@ -44,10 +45,10 @@ a {
 }
 
 a:hover,
-a:focus {
-    color: #59F459;
-    text-decoration: underline;
-    outline: 0;
+a:focus {    
+    color: #006600;
+    /*text-decoration: underline;*/
+    /*outline: 0;*/
 }
 
 a:before,
@@ -100,7 +101,7 @@ a:after {
 }
 
 .navbar .nav li a:hover{
-  text-decoration:underline;
+  /*text-decoration:underline;*/
 }
 
 /*TILT*/
@@ -236,7 +237,7 @@ a:after {
 
 #f i:hover {
   color: #00cc00;
-  
+
 }
 
 /****** SECTIONS *****/
@@ -348,7 +349,7 @@ border:1px solid #E3AF02;
 fieldset[disabled] .btn-primary,
 .btn-primary.disabled:hover,
 .btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:`,
 .btn-primary.disabled:focus,
 .btn-primary[disabled]:focus,
 fieldset[disabled] .btn-primary:focus,
