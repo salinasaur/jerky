@@ -1,12 +1,3 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
- *
- * Project Name: SPOT - Free Bootstrap 3 Theme
- * Version: 1.0
- * URL: http://blacktie.co
- */
- 
 /* FONTS */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
@@ -23,7 +14,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     
-
+    /*margin-top: 0px;*/
 }
 
 /* Titles */
@@ -40,10 +31,6 @@ p {
     margin-bottom: 25px;
 }
 
-.centered {
-    text-align: center;
-}
-
 /* Links */
 a {
     color: #00cc00;
@@ -58,8 +45,8 @@ a {
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
-    text-decoration: none;
+    color: #59F459;
+    text-decoration: underline;
     outline: 0;
 }
 
@@ -83,32 +70,38 @@ a:after {
 
 
 .navbar {
-    font-weight: 800;
-    font-size: 14px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  font-weight: 800;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
 }
 
 .navbar-inverse {
-    background: #FFFFF;
-    border-color: #FFFFF;
+  background: #FFFFF;
+  border-color: #FFFFF;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-    background: #00cc00
+  background: #00cc00
 }
 
 .navbar-inverse .navbar-brand {
-    color: #FFFFF;
-    font-weight: bolder;
-    font-size: 22px;
-    letter-spacing: 1px;
+  color: #FFFFF;
+  font-weight: bolder;
+  font-size: 22px;
+  letter-spacing: 1px;
 }
 
 .navbar-inverse .navbar-brand i {
-    color: #00cc00;
-    font-size: 22px;
-    letter-spacing: 1px;
+  color: #00cc00;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.navbar .nav li a:hover{
+  color: #59F459;
+  /*text-decoration:underline;*/
 }
 
 /*TILT*/
@@ -133,15 +126,15 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-    background: url(#) no-repeat center top;
-    margin-top: -10px;
-    padding-top:20px;
-    text-align:center;
-    background-attachment: relative;
-    background-position: center center;
-    min-height: 500px;
-    width: 100%;
-    
+  background: url(#) no-repeat center top;
+  margin-top: -10px;
+  padding-top:20px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 500px;
+  width: 100%;
+  
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -154,154 +147,154 @@ a:after {
 }
 
 #headerwrap h1 {
-    margin-top: 100px;
-    color: white;
-    font-size: 70px;
-    font-weight: 300;
-    letter-spacing: 3px;
+  margin-top: 100px;
+  color: black;
+  font-size: 70px;
+  font-weight: 300;
+  letter-spacing: 3px;
 }
 
 #headerwrap h2 {
-    color: white;
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* White Header Wrap */
 #dg {
-    background: #FFFFF;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
+  background: #FFFFF;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
 }
 
 #dg h4 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 /* Light Grey */
 #lg {
-    background: #ebebeb;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    text-align: center;
+  background: #ebebeb;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
 }
 
 #lg h4 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 
-/* Green Wrap */
+/* White Wrap */
 #r {
-    background: #00cc00;
-    padding-top: 35px;
-    padding-bottom: 35px;
+  background: #FFFFF;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 #r h4 {
-    color: white;
-    font-weight: 700;
+  color: #333;
+  font-weight: 700;
 }
 
 #r p {
-    color: white;
+  color: black;
 }
 
 /* Blue Wrap */
 
 #blue {
-    background: #3498db;
-    padding-top: 35px;
-    padding-bottom: 35px;
+  background: #3498db;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 #blue h4 {
-    color: white;
-    font-weight: 700;
+  color: black;
+  font-weight: 700;
 }
 
 #blue p {
-    color: white;
+  color: black;
 }
 
 
 
 /* Footer Wrap */
 #f {
-    background: #FFFFFF;
-    /*padding-top: 30px;
-    padding-bottom: 30px;*/
+  background: #FFFFFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #f i {
-    color: #bdbdbd;
-    font-size: 30px;
-    padding: 20px;
+  color: #bdbdbd;
+  font-size: 30px;
+  padding: 20px;
 }
 
 #f i:hover {
-    color: #00cc00;
+  color: #59F459;
 }
 
 /****** SECTIONS *****/
 
 .w {
-    padding-top: 35px;
+  padding-top: 35px;
 }
 
 .w h4 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .w i {
-    color: #00cc00;
-    font-size: 60px;
+  color: #00cc00;
+  font-size: 60px;
 }
 
 
 .wb {
-    padding-top: 35px;
-    margin-bottom: 0px;
+  padding-top: 35px;
+  margin-bottom: 0px;
 }
 
 .wb h4 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .desc {
-    padding-top: 35px;
+  padding-top: 35px;
 }
 
 .desc h4 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .desc i {
-    color: #00cc00;
-    font-size: 12px;
-    padding: 5px;
+  color: #00cc00;
+  font-size: 12px;
+  padding: 5px;
 }
 
 /***** MODAL CONTACT *****/
 .modal-content {
-    border-radius: 0px;
+  border-radius: 0px;
 
 }
 
 .modal-header {
-    background: #f2f2f2;
-    color: white;
+  background: #f2f2f2;
+  color: white;
 }
 
 .modal-header h4 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .modal-body {
-    background: #ffff;
+  background: #ffff;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
@@ -309,35 +302,25 @@ a:after {
 }
 
 .modal-footer {
-    background: #f2f2f2;
-    margin-top: 0px; 
+  background: #f2f2f2;
+  margin-top: 0px; 
 }
 
 /****** BUTTONS *****/
 .btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.428571429;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-       -o-user-select: none;
-          user-select: none;
+border:1px solid #BA6300; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font:Lato; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+ background-color: #FFCE08; background-image: -webkit-gradient(linear, left top, left bottom, from(#FFCE08), to(#FF8300));
+ background-image: -webkit-linear-gradient(top, #FFCE08, #FF8300);
+ background-image: -moz-linear-gradient(top, #FFCE08, #FF8300);
+ background-image: -ms-linear-gradient(top, #FFCE08, #FF8300);
+ background-image: -o-linear-gradient(top, #FFCE08, #FF8300);
+ background-image: linear-gradient(to bottom, #FFCE08, #FF8300);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFCE08, endColorstr=#FF8300);
 }
 
 .btn-primary {
   color: #ffffff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: #FF8300;
+  border-color: #FF8300;
 }
 
 .btn-primary:hover,
@@ -345,9 +328,13 @@ a:after {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #00cc00;
-  border-color: #00cc00;
+border:1px solid #E3AF02;
+ background-color: #FFD503; background-image: -webkit-gradient(linear, left top, left bottom, from(#FFD503), to(#FFA319));
+ background-image: -webkit-linear-gradient(top, #FFD503, #FFA319);
+ background-image: -moz-linear-gradient(top, #FFD503, #FFA319);
+ background-image: -ms-linear-gradient(top, #FFD503, #FFA319);
+ background-image: -o-linear-gradient(top, #FFD503, #FFA319);
+ background-image: linear-gradient(to bottom, #FFD503, #FFA319);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFD503, endColorstr=#FFA319);
 }
 
 .btn-primary:active,
@@ -378,14 +365,15 @@ fieldset[disabled] .btn-primary.active {
 .btn-lg {
   padding: 10px 16px;
   font-size: 18px;
+  /*font-weight: normal;*/
   line-height: 1.33;
   border-radius: 6px;
 }
 
 .btn-info {
   color: #ffffff;
-  background-color: #00cc00;
-  border-color: #00cc00;
+  background-color: #FF8300;
+  border-color: #FF8300;
 }
 
 
@@ -484,3 +472,9 @@ fieldset[disabled] .btn-primary.active {
 .pricing-option .pricing-signup:hover {
     background: #00cc00;
 }
+
+
+
+
+
+

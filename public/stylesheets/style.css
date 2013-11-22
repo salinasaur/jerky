@@ -1,10 +1,23 @@
-.navbar .nav li a:hover {
-  color: #00ee00;
+.navbar-default {
+  background-color: transparent;
+  border: none;
 }
 .main-content {
-  margin-top: 15%;
-  height: 430px;
+  padding-top: 10%;
+  height: 600px;
+}
+.main-content h1 {
+  font-size: 42px;
+}
+.main-content h2 {
+  font-size: 18px;
+}
+.main-content .cta-btn {
+  margin: 2%;
 }
 .learn-more {
+  text-align: center;
+}
+.centered {
   text-align: center;
 }
