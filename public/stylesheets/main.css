@@ -1,3 +1,12 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: SPOT - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+ 
 /* FONTS */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
@@ -5,7 +14,7 @@
 /* OVERALL ASPECT */
 
 body {
-  background-color: #FFFFF;
+  background-color: #f2f2f2;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
@@ -14,7 +23,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     
-    /*margin-top: 0px;*/
+    margin-top: 70px;
 }
 
 /* Titles */
@@ -31,10 +40,13 @@ p {
     margin-bottom: 25px;
 }
 
+.centered {
+    text-align: center;
+}
+
 /* Links */
-a {
-    /*color: #59F459;*/
-    color: #333;
+/*a {
+    color: #f85c37;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -45,10 +57,10 @@ a {
 }
 
 a:hover,
-a:focus {    
-    color: #333;
-    /*text-decoration: underline;*/
-    /*outline: 0;*/
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
 }
 
 a:before,
@@ -68,40 +80,35 @@ a:after {
     margin: 1em 0;
     padding: 0;
 }
-
+*/
 
 .navbar {
-  font-weight: 800;
-  font-size: 14px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
+	font-weight: 800;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .navbar-inverse {
-  background: #FFFFF;
-  border-color: #FFFFF;
+	background: #2d2d2d;
+	border-color: #2d2d2d;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-  background: #00cc00
+	background: #ff7878
 }
 
 .navbar-inverse .navbar-brand {
-  color: #FFFFF;
-  font-weight: bolder;
-  font-size: 22px;
-  letter-spacing: 1px;
+	color: #999999;
+	font-weight: bolder;
+	font-size: 22px;
+	letter-spacing: 1px;
 }
 
 .navbar-inverse .navbar-brand i {
-  color: #00cc00;
-  font-size: 22px;
-  letter-spacing: 1px;
-}
-
-.navbar .nav li a:hover{
-  /*text-decoration:underline;  */
+	color: #ff7878;
+	font-size: 22px;
+	letter-spacing: 1px;
 }
 
 /*TILT*/
@@ -126,15 +133,15 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-  background: url(#) no-repeat center top;
-  margin-top: -10px;
-  padding-top:20px;
-  text-align:center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 500px;
-  width: 100%;
-  
+	background: url(../img/header-bg.jpg) no-repeat center top;
+	margin-top: -10px;
+	padding-top:20px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 500px;
+	width: 100%;
+	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -147,155 +154,154 @@ a:after {
 }
 
 #headerwrap h1 {
-  margin-top: 100px;
-  color: black;
-  font-size: 70px;
-  font-weight: 300;
-  letter-spacing: 3px;
+	margin-top: 100px;
+	color: white;
+	font-size: 70px;
+	font-weight: 300;
+	letter-spacing: 3px;
 }
 
 #headerwrap h2 {
-  color: black;
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+	color: white;
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
-/* White Header Wrap */
+/* Dark Grey Wrap */
 #dg {
-  background: #FFFFF;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  text-align: center;
+	background: #e0e0e0;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
 }
 
 #dg h4 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 /* Light Grey */
 #lg {
-  background: #ebebeb;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  text-align: center;
+	background: #ebebeb;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
 }
 
 #lg h4 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 
-/* White Wrap */
+/* Red Wrap */
 #r {
-  background: #FFFFF;
-  padding-top: 35px;
-  padding-bottom: 35px;
+	background: #ff7878;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 #r h4 {
-  color: #333;
-  font-weight: 700;
+	color: white;
+	font-weight: 700;
 }
 
 #r p {
-  color: black;
+	color: white;
 }
 
 /* Blue Wrap */
 
 #blue {
-  background: #3498db;
-  padding-top: 35px;
-  padding-bottom: 35px;
+	background: #3498db;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 #blue h4 {
-  color: black;
-  font-weight: 700;
+	color: white;
+	font-weight: 700;
 }
 
 #blue p {
-  color: black;
+	color: white;
 }
 
 
 
 /* Footer Wrap */
 #f {
-  background: #FFFFFF;
-  padding-top: 30px;
-  padding-bottom: 30px;
+	background: #2d2d2d;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 #f i {
-  color: #bdbdbd;
-  font-size: 30px;
-  padding: 20px;
+	color: #bdbdbd;
+	font-size: 30px;
+	padding: 20px;
 }
 
 #f i:hover {
-  color: #B39C6B;
-
+	color: #ff7878;
 }
 
 /****** SECTIONS *****/
 
 .w {
-  padding-top: 35px;
+	padding-top: 35px;
 }
 
 .w h4 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .w i {
-  color: #B39C6B;
-  font-size: 60px;
+	color: #ff7878;
+	font-size: 30px;
 }
 
 
 .wb {
-  padding-top: 35px;
-  margin-bottom: 0px;
+	padding-top: 35px;
+	margin-bottom: 0px;
 }
 
 .wb h4 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .desc {
-  padding-top: 35px;
+	padding-top: 35px;
 }
 
 .desc h4 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .desc i {
-  color: #00cc00;
-  font-size: 12px;
-  padding: 5px;
+	color: #ff7878;
+	font-size: 12px;
+	padding: 5px;
 }
 
 /***** MODAL CONTACT *****/
 .modal-content {
-  border-radius: 0px;
+	border-radius: 0px;
 
 }
 
 .modal-header {
-  background: #f2f2f2;
-  color: white;
+	background: #bdbdbd;
+	color: white;
 }
 
 .modal-header h4 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .modal-body {
-  background: #ffff;
+	background: #f2f2f2;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
@@ -303,12 +309,9 @@ a:after {
 }
 
 .modal-footer {
-  background: #f2f2f2;
-  margin-top: 0px; 
+	background: #f2f2f2;
+	margin-top: 0px; 
 }
-
-
-
 
 /* ==========================================================================
    Pricing Tables
@@ -320,8 +323,8 @@ a:after {
 
 .pricing-option .pricing-top {
     position: relative;
-    background: #f2f2f2;
-    color: black;
+    background: #222;
+    color: white;
     text-align: center;
     font-weight: bold;
 
@@ -337,7 +340,7 @@ a:after {
     position: absolute;
     top: 0;
     left: 0;
-    background: #00cc00;
+    background: #1abc9c;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
@@ -403,11 +406,7 @@ a:after {
 }
 
 .pricing-option .pricing-signup:hover {
-    background: #00cc00;
+    background: #ff7878;
 }
-
-
-
-
 
 
