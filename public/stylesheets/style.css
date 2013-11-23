@@ -104,7 +104,7 @@ body a:hover {
 }
 .main-content {
   padding-top: 10%;
-  min-height: 800px;
+  min-height: 500px;
 }
 .main-content h1 {
   font-size: 42px;
@@ -124,9 +124,6 @@ body a:hover {
 }
 .learn-more {
   text-align: center;
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
 }
 .centered {
   text-align: center;
