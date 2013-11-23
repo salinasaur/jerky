@@ -1,6 +1,22 @@
 .navbar-default {
   background-color: transparent;
   border: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#nav {
+  margin-right: 5%;
+}
+body a:hover {
+  text-decoration: none;
+}
+.navbar .nav li a {
+  color: #333;
+  font-weight: normal;
+}
+.navbar .nav li a:hover {
+  text-decoration: underline;
+  color: #333;
 }
 .main-content {
   padding-top: 10%;
@@ -15,6 +31,13 @@
 .main-content .cta-btn {
   margin: 5%;
 }
+.btn-lg {
+  padding: 14px 38px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.33;
+  border-radius: 6px;
+}
 .learn-more {
   text-align: center;
   position: absolute;
@@ -23,4 +46,7 @@
 }
 .centered {
   text-align: center;
+}
+.line {
+  border-bottom: solid #e3e3e3 1px;
 }
