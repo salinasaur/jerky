@@ -32,10 +32,10 @@ $(document).ready(function() {
         	type: 'POST', 
         	data: $form.serialize(),
 			// Receive response from server and do stuff
-			success: function(response) {				
+			success: function(response) {								
+				$('#payment-form').addClass("payment-form-thankyou");
+				$('#payment-form').html("<h1>Thanks for ordering!</h1><p>Your order is being prepared and will be sent out shortly. Feel free to email us at <strong><a href='mailto:ryan@sumojerky.com'>ryan@sumojerky.com</a></strong> with any changes."); 
 				$('.checkout-container').addClass("thankyou");
-				$('#payment-form').html("<h1>Thanks for ordering!</h1><p>Your order is being prepared and will be sent out shortly. Feel free to email us at <a href='mailto:threeleaftea.com@gmail.com'>threeleaftea.com@gmail.com</a> with any changes to your order."); 
-
 			}        	
         });
 
