@@ -1,49 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="/images/favicon.png">
+<%= include /layouts/header.ejs %>
+    <div class="container checkout-container">            
+        <div class="row">     
+            <div class="col-md-12">      
 
-    <title>Sumo Jerky - Monthly Jerky Delivery Service</title>
+                <form novalidate autocomplete="on" id="payment-form" class="form">                                                            
+                    <div class="row">
+                        <div class="checkout-section">
 
-    <!-- Stripe --> 
-    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+                            <div class="col-md-12 checkout-title">
+                                <h1>Get delicious jerky delivered to your door.</h1>
+                                <h3>Each order includes at least 2 bags of jerky.<br> Only $25/month. Order today!</h3>
+                            </div>       
+                            
+                            
+                           <!--  <div class="col-md-12">         
+                                <p>Monthly jerky subscription (2 lbs.) for $25/month</p>                                                       
+                                <div class="bill">
+                                Solo Jerky - 2 lbs. jerky ($25/month) 
+                                Billed Today: <span class="price">$25.00</span>
+                                </div>
+                            </div> -->
+                        </div> <!-- checkout-section -->                                                
+                    </div> <!-- row -->
+                                     
+                     <div class="line col-sm-4 col-sm-offset-4"></div>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="/stylesheets/font-awesome.min.css" rel="stylesheet">
+                    <div class="row">
+                        <div class="checkout-section">
 
-    <!-- Custom styles for this template -->
-    <link href="/stylesheets/main.css" rel="stylesheet">
-    <link href="/stylesheets/style.css" rel="stylesheet">
+                            <div class="col-md-12">
+                                <h2>Shipping Address</h2>
+                            </div>                            
 
+                            <div class="form-group col-md-12">                                                                              
+                                <input type="text" class="form-control" name="name" placeholder="Name">                            
+                            </div> <!-- form-group -->
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
+                            <div class="form-group col-md-12">
+                                <input type="address" class="form-control" name="address" placeholder="Street Address">                       
+                            </div> <!-- form-group -->
 
-  <body>
+                            <div class="form-group col-xs-4">
+                                <input type="text" class="form-control" name="city" placeholder="City">
+                            </div> <!-- form-group -->                    
+
+                            <div class="form-group  col-xs-4">
+                                <input type="text" class="form-control" name="state" placeholder="State">
+                            </div>
+
+                            <div class="form-group  col-xs-4">
+                                <input type="text" class="form-control" name="zip" placeholder="Zip" pattern="\d*">                      
+                            </div>
+                            
+                        </div> <!-- checkout-section -->    
+                    </div> <!-- row -->                                                                 
+
+                    <div class="row">
+                        <div class="checkout-section">
+
+                            <div class="col-md-12">
+                                <h2>Billing Details</h2>
+                            </div>
+
+                            <div class="form-group col-sm-12">
+                                <!-- <label for="email">Email</label>                             -->
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email Address">
+                            </div> <!-- form-group -->
+
+                            <div class="form-group col-sm-12">                            
+                                <!-- <label for="number">Card Number</label>                             -->
+                                <input type="text" class="form-control" size="20" id="number" data-stripe="number" placeholder="Card Number" pattern="\d*">
+                            </div> <!-- form-group -->
+
+                            <div class="form-group col-sm-6">
+                                <!-- <label for="expiration" class="control-label">Expires</label>                             -->
+                                <input type="text" class="form-control" id="expiration" placeholder="MM / YY" pattern="\d*">
+                            </div>                            
+
+                            <div class="form-group col-sm-6">
+                                <!-- <label for="cvc" class="control-label">CVC</label>                             -->
+                                <input type="text" class="form-control" size="4" id="cvc" data-stripe="cvc" placeholder="CVC" pattern="\d*">                                
+                            </div> <!-- form-group -->
+                                                    
+                            
+                            
+                        </div> <!-- checkout-section -->    
+                    </div> <!-- row -->    
+
+                    <div class="row">
+                        <div class="checkout-btn">
+                            <button type="submit" class="btn btn-success btn-lg">Sign Up</button>    
+                        </div>
+                    </div>  
+
+                                        
+                </form> <!-- form -->
+                
+            </div> <!-- <div class="col-md-6 col-md-offset-3"> -->
+        </div> <!-- row -->
+    </div> <!-- contaner -->       
+
 
 	
-
-	<%= include /layouts/checkout_form.ejs %>
-
-
-	
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="/javascripts/bootstrap.min.js"></script>
-    <script src="/javascripts/smooth-scroll.js"></script>
-    <script type="text/javascript" src="/javascripts/checkout.js"></script>   
-    <script src="/javascripts/jquery.payment.js"></script>
-  </body>
-</html>
+<%= include /layouts/footer.ejs %>
