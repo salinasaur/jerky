@@ -9,6 +9,6 @@
     "express": "3.4.2",
     "ejs": "*",
     "less-middleware": "*",
-    "stripe": "2.2.1"
+    "stripe": "2.2.2"
   }
 }
